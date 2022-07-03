@@ -13,13 +13,13 @@ function military(time){
     }
     
     var carry=0;
-    if(sec+45>60){
+    if(sec+45>=60){
         sec=sec+45-60;
         carry=1;
     }
     else sec+=45
 
-    if(min+45+carry>60){
+    if(min+45+carry>=60){
         min=min+45+carry-60;
         carry=1;
     }
@@ -28,7 +28,7 @@ function military(time){
         min+=45;
     }
 
-    if(times+carry>24){
+    if(times+carry>=24){
         hour="00"
     }
     else hour=(times+1).toString()
