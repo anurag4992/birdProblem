@@ -6,8 +6,10 @@ function military(time){
     var hour=time.substring(0, 2)
     var min=time.substring(3, 5)
     var sec=time.substring(6, 8)
+    
+    var times= hour;
     if(time.charAt(9)=='P'){
-        var times=hour+12;
+        times=hour+12;
     }
     
     var carry=0;
